@@ -1,7 +1,7 @@
 {
   "name": "jpowersdev/grand",
   "description": "Test composer package",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "license": "proprietary",
   "authors": [
     {
@@ -12,5 +12,7 @@
     }
   ],
   "require": {
+    "php": ">=7.0",
+    "latte/latte": "^2.9"
   }
 }
