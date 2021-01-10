@@ -1,0 +1,16 @@
+{
+  "name": "jpowersdev/grand",
+  "description": "Test composer package",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Jon Powers",
+      "email": "jpowerdev@gmail.com",
+      "homepage": "http://jonpowers.dev",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+  }
+}
