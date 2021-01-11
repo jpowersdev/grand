@@ -13,6 +13,12 @@
   ],
   "require": {
     "php": ">=7.0",
-    "latte/latte": "^2.9"
+    "latte/latte": "^2.9",
+    "upstatement/routes": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grand\\": "src/"
+    }
   }
 }

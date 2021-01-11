@@ -5,15 +5,18 @@ namespace Grand;
 
 
 class Grand {
-	public $template_dir;
+	public static $dirname = 'views';
 
-	public function __construct(string $template_dir){
-		$this->template_dir = $template_dir;
-
-		$this->register_admin_pages();
+	public function __construct() {
+		if ( !defined('ABSPATH') ) {
+			return;
+		}
+		if ( class_exists('\WP') && !defined('TIMBER_LOADED') ) {
+			$this->register_admin_pages();
+		}
 	}
 
 	private function register_admin_pages(){
-		echo __FILE__;
+		echo plugin_dir_path( dirname( __FILE__ ) );
 	}
 }
