@@ -20,13 +20,18 @@ class Admin {
 	}
 
 	public function init() {
-		\add_menu_page(
-			$this->page_title,
-			$this->menu_title,
-			$this->capability,
-			$this->menu_slug,
-			'self::render',
-			$this->icon_url
-		);
+		add_action('admin_menu', function(){
+			\add_menu_page(
+				$this->page_title,
+				$this->menu_title,
+				$this->capability,
+				$this->menu_slug,
+				array(
+					$this,
+					'render'
+				),
+				$this->icon_url
+			);
+		});
 	}
 }
