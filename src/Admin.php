@@ -20,7 +20,7 @@ class Admin {
 	}
 
 	public function init() {
-		add_menu_page(
+		\add_menu_page(
 			$this->page_title,
 			$this->menu_title,
 			$this->capability,
